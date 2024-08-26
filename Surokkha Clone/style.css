@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,47wQbNPTDJp9hMYdvogK2hAUiHsGeiybwaWe36bwtRQ3UTpYV7YuZ8FV5j9nauFCWwcjM6dTzpL5s2N79Rp5unwdMvc8ZKU=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+ /* naver section start  */
+nav {
+    display: flex;
+    margin: 20px 120px;
+    justify-content: space-between;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+}
+nav li{
+    list-style: none;
+    padding: 10px;
+    position: relative;
+}
+nav li a{
+    text-decoration: none;
+    color: #203b64;
+    font-size: 18px;
+}
+nav li a::before{
+    content: "";
+    top: 0;
+    left: 50%;
+    position: absolute;
+    width: 0;
+    height: 100%;
+    border-bottom: 4px solid #203b64;
+    transform: translateX(-50%);
+    transition: 0.5s;
+}
+nav li a:hover::before{
+    width: 100%;
+}
+nav button{
+    padding: 10px ;
+    background-color: rgba(255, 115, 68, 0.765);
+    border: none;
+    color: white;
+    border-radius: 5px;
+    margin-left: 10px ;
+    font-size: 16px ;
+}
+nav button:hover{
+    background-color: #f65c24;
+}
+/* naver section end */
+
+.banner{
+    background-image: url(image/banner-bg.7358efba.jpg);
+    background-repeat: no-repeat;
+    background-position: cover;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+/* banner left part start*/
+.banner-left{
+    width: 420px;
+    height: 350px;
+    margin-top: 70px;
+    color: #092753;
+    padding: 30px 30px;
+    background: white;
+    border-radius: 5px;
+    position: relative;
+}
+.bl-one h2{
+    font-size: 32px;
+}
+.banner-left::after{
+    content: "";
+    width: 310px;
+    height: 10px;
+    background: #092753;
+    position: absolute;
+    bottom:0px;
+    left: 40px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.banner-left:hover{
+    background-color: aliceblue;
+    transition:0.6s;
+}
+.bl-one{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.bl-two{
+    padding-top:65px;
+}
+.bl-two > h3{
+    padding-left: 50px;
+}
+.bl-two > img{
+    padding-top: 20px;
+    padding-left: 27px;
+}
+/* banner left part end*/
+
+
+/* banner right part start*/
+.banner-right{
+    margin-top: 70px;
+    width: 400px;
+    height: 350px;
+}
+.banner-right > div{
+    width: 350px;
+    height: 80px;
+    background: white;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    gap: 40px;
+    align-items:center;
+    justify-content: center;
+    color: #092753;
+    font-size: 22px;
+    position: relative;
+}
+.br-one::after{
+    content: "";
+    width: 8px;
+    height: 65px;
+    background: green;
+    position: absolute;
+    left: 0px;
+    top: 10px;
+    bottom: 10px;
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 80px;
+}
+.br-one:hover{
+    background-color: rgb(200, 236, 203);
+    transition:0.6s;
+}
+.br-two::after{
+    content: "";
+    width: 8px;
+    height: 65px;
+    background: #d8de00;
+    position: absolute;
+    left: 0px;
+    top: 10px;
+    bottom: 10px;
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 80px;
+}
+.br-two:hover{
+    background-color: #f6f8bd; 
+    transition:0.6s;
+}
+.br-three::after{
+    content: "";
+    width: 8px;
+    height: 65px;
+    background: #25be88;
+    position: absolute;
+    left: 0px;
+    top: 10px;
+    bottom: 10px;
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 80px;
+}
+.br-three:hover{
+    background-color: #c6fdea; 
+    transition:0.6s;
+}
+.br-four::after{
+    content: "";
+    width: 8px;
+    height: 65px;
+    background: #5fc6cc;
+    position: absolute;
+    left: 0px;
+    top: 10px;
+    bottom: 10px;
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 80px;
+}
+.br-four:hover{
+    background: #bdf8fb;
+    transition:0.6s;
+}
+/* banner right part end*/
+
+/* sub-banner start */
+
+.sub-banner{
+    width: 1030px;
+    height: 85px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 120px;
+    margin-top: -100px;
+    border-radius: 5px;
+    gap: 30px;
+    box-shadow: 7px 7px 7px  rgb(238, 238, 238);
+}
+.thirdlogo{
+    border-right: 1px dotted black;
+    text-align: center;
+    line-height: 30px;
+    padding-right: 40px;
+}
+.logosname{
+    color: #0d7b2c;
+    font-size: 17px;
+    font-weight:bold;
+}
+.thirdlogos{
+    line-height: 30px;
+}
+.thirdlogos img{
+    padding-left:40px;
+}
+
+/* sub-banner end */
+
+/* card section start */
+.big-card{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+.service-container{
+    width: 1200px;
+    height: 90vh;
+    box-shadow: 8px 8px 8px rgb(238, 238, 238);
+    
+}
+.service-container h1{
+    padding-left: 120px;
+    margin: 40px;
+}
+.service-container h1::after{
+    content: "";
+    width: 5px;
+    height: 60px;
+    left: 220px;
+    background: #ff483c;
+    position: absolute;
+    border-radius: 5px;
+}
+.service-card{
+    width: 350px;
+    height:350px;
+    border-radius: 10px;
+    text-align: center;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    gap:30px;
+}
+.service-card h3{
+    margin: 20px;
+}
+.service-card p{
+    font-size: 20px;
+}
+
+.dwn-app{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    padding-left: 250px;
+    padding-bottom: 100px;
+    gap: 200px;
+   
+}
+/* card section end  */ 
+
+
+/* footer section start */
+footer{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    gap: 30px;
+    padding-top: 50px;
+    padding-left: 100px;
+    background: #f26d3e;
+}
+.ft1{
+    
+    width: 150px;
+    height: 250px;
+}
+
+footer li{
+    list-style: none;
+}
+footer li a{
+    text-decoration: none;
+    color: white;
+    font-size:20px;
+}
+
+.ft2{
+    width: 200px;
+    height: 250px;
+    line-height: 30px;
+}
+.ft3{
+    width: 300px;
+    height: 250px;
+    color: white;
+}
+.ft3 img{
+    padding-top: 20px;
+}
+.ft4{
+    width: 300px;
+    height: 250px;
+    color: white;
+}
+.ft4 img{
+    padding-top: 20px;
+}
+/* footer section end */
